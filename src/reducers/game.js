@@ -15,6 +15,8 @@ export const game = createSlice({
   name: 'game',
   initialState: newGame,
   reducers: {
+    // two actions here: captureSquare and restart. captureSquare requires a 
+    // payload, which is the index of the square
     captureSquare: (state, action) => {
       const { index } = action.payload
 
